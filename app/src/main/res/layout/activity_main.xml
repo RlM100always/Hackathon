@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true"
+    android:background="@color/back"
+    android:id="@+id/draw_layout"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Main Activity Design -->
+
+
+    <!-- Toolbar code -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/tolbar"
+            android:background="@color/service_bar"
+            app:title="APP Name"
+            app:titleTextColor="@color/black"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!-- NavigationBar Code -->
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu"
+        android:textColorSecondary="@color/documentary"
+        android:layout_gravity="start"
+        app:itemIconPadding="8dp"
+        android:visibility="visible"
+        app:itemTextColor="@color/back"
+        app:itemIconTint="#F50057"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
